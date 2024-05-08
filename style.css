@@ -1,0 +1,296 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo img {
+    width: 164px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 16px;
+    align-items: center;
+    font-family: "Segoe UI";
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li span {
+    padding: 0 5px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 70px;
+
+}
+
+.first span {
+    font-family: Segoe UI;
+    font-size: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    color: #222222;
+}
+
+section span img {
+    width: 92px;
+    margin: 0 23px;
+}
+
+p {
+    font-family: Segoe UI;
+    font-size: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #222222;
+    width: 69vw;
+    text-align: center;
+}
+
+.btn {
+    background-color: #00b6d1;
+
+    padding: 17px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin: 10px 0px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.second {
+    max-width: 70vw;
+    margin: auto;
+
+}
+
+.download {
+    display: flex;
+
+
+}
+
+.blue {
+    padding: 12px;
+}
+
+.green {
+
+    background-color: #5cb85c;
+    padding: 12px;
+}
+
+.item-lang {
+    font-weight: 650;
+    columns: #222222;
+    text-align: center;
+    padding-bottom: 44px;
+    font-size: larger;
+}
+
+.item {
+    padding: 26px;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+.download {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.large {
+    font-size: 23px;
+}
+
+.download img {
+    padding: 0px 12px;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+.box {
+    background-color: #222222;
+    color: #ffffff;
+    height: 90vh;
+
+
+}
+
+.last {
+    display: flex;
+    flex-direction: row;
+    /* padding: 7% 17%; */
+    padding-left: 17%;
+    padding-top: 7%;
+    /* gap: 90px; */
+
+}
+
+.sign-up {
+
+    width: 25vw;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    padding-left: 0px;
+
+}
+
+.last-text2 {
+    max-width: 70pc;
+}
+
+.email {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #00b6d1;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.input {
+    height: 35px;
+    width: 240px;
+    border-color: rgb(51 51 51 / 16%);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 31px;
+    color: #222222;
+
+}
+
+.enter {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+}
+
+.last-button {
+
+    height: 24px;
+    border: 1px solid;
+    width: 227px;
+    background-color: #00b6d1;
+    border-color: #00b6d1;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+
+
+}
+
+
+.last-text1 {
+    text-align: center;
+}
+
+.last-text22 {
+    text-align: center;
+}
+
+
+.last-para {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 17%;
+    padding-top: 3%;
+
+}
+
+.msi {
+
+    font-size: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+    line-height: 31px;
+    color: #ffffff;
+
+}
+
+
+/* Add a media query for screens smaller than 768px */
+@media screen and (max-width: 1300px) {
+    nav {
+        flex-direction: column; /* Change flex direction to stack items vertically */
+        padding: 16px; /* Adjust padding */
+    }
+
+    .right {
+        margin-top: 20px; /* Add margin to separate from logo */
+    }
+
+    .right ul {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 10px; /* Adjust gap between items */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .right ul li {
+        padding: 5px 0; /* Adjust padding */
+    }
+}
