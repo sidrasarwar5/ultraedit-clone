@@ -7,13 +7,18 @@
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
     padding-left: 6%;
     padding-right: 6%;
     padding-bottom: 16px;
-    align-items: center;
+    padding-top:2px ;
     font-family: "Segoe UI";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+    flex-direction: row;
 }
 
 .right ul {
@@ -21,11 +26,18 @@ nav {
     gap: 34px;
 }
 
+
 .right ul li {
     list-style: none;
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.right ul li:hover{
+    background-color: #00B6D1;
+    text : white;
+    height: 24px;
 }
 
 .right ul li span {
@@ -70,7 +82,6 @@ p {
 
 .btn {
     background-color: #00b6d1;
-
     padding: 17px;
     border: none;
     border-radius: 5px;
@@ -79,6 +90,11 @@ p {
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover{
+     transform:  scale(1.05);
 }
 
 .btn a {
@@ -274,10 +290,11 @@ p {
 
 
 /* Add a media query for screens smaller than 768px */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 768px) {
     nav {
         flex-direction: column; /* Change flex direction to stack items vertically */
         padding: 16px; /* Adjust padding */
+        align-items: center; /* Center items horizontally */
     }
 
     .right {
